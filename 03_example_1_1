@@ -1,0 +1,25 @@
+#define PIN_LED  12//13
+#define PIN_LED2 9
+#define PIN_LED3 3
+
+void setup() {
+  pinMode(PIN_LED, OUTPUT);
+  pinMode(PIN_LED2, OUTPUT);
+  pinMode(PIN_LED3, OUTPUT);
+  Serial.begin(115200);
+}
+
+int count;
+
+void loop() {
+  digitalWrite(PIN_LED, 0);
+  digitalWrite(PIN_LED2, 0);
+  digitalWrite(PIN_LED3, 1);
+  Serial.print("Hello ");
+  Serial.println(count++);
+  delay(1000);
+  digitalWrite(PIN_LED, 1);
+  digitalWrite(PIN_LED2, 1);
+  digitalWrite(PIN_LED3, 0);
+  delay(1000);
+}
