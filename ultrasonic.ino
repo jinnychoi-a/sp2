@@ -1,3 +1,5 @@
+
+# https://m.blog.naver.com/boilmint7/220926404472
 #define TRIG 9 //TRIG 핀 설정 (초음파 보내는 핀)
 #define ECHO 8 //ECHO 핀 설정 (초음파 받는 핀)
 
